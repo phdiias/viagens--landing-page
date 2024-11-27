@@ -59,13 +59,13 @@ header {
 }
 
 /* Sessão Hero (Minha viagem) */
-#trip-me {
+#hero {
   margin-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  & .trip-desc {
+  & .hero-desc {
     position: relative;
     text-align: center;
 
@@ -122,3 +122,19 @@ header {
     }
   }
 }
+
+/* Sessão Tripme*/
+/* 
+Descrição dos banners
+banner-lone-pine: 
+Localização: Lone Pine, United States
+CC: Acampamento Noturno No Deserto Montanhoso Sob O Céu Estrelado
+
+banner-chania-griencheniand:
+Localização: Chania, Griechenland
+CC: Horizonte Da Cidade No Mar Azul Sob O Céu Azul
+
+banner-barra-da-camaratuba
+Localização: Barra de Camaratuba, PB, Brazil
+CC: Corpo de água
+*/
