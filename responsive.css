@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+  /* Deixando responsivo a navegação com menu hamburguer */
+  #menu {
+    & #icon-menu {
+      z-index: 5;
+    }
+    
+    /* Retirando a navegação desktop */
+    & .menu-nav {
+      display: none;
+    }
+
+    /* Fazendo o ícone do menu hamburger aparecer */
+    & .hamburger {
+      display: block;
+      z-index: 5;
+    }
+
+    /* Aplicando uma classe .active para o Javascript */
+    .menu-mobile.active {
+      max-width: 100%;
+      opacity: 1;
+    }
+
+    /* Estilizando a navegação do menu mobile */
+    .menu-mobile {
+      & .menu-item {
+        list-style-type: none;
+        
+        & a {
+          color: #D4DCFF;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  /* Deixando responsivo a sessão hero */
+  #hero {
+    & .hero-desc {
+      & h1 {
+        font-size: 30px;
+      }
+
+      & h2 {
+        font-size: 20px;
+      }
+      /* Retirando o avião desktop */
+      & .airplanner-desktop {
+        display: none;
+      }
+      /* Estilizando o avião mobile */
+      & .airplanner-mobile {
+        max-width: 200px;
+        width: 100%;
+        margin-bottom: -20px;
+      }
+    }
+  }
+
+  /* Tamanho da imagem da sessão Quem somos? */
+  #meet-us {
+    & #about-us {
+      & .about-us-img {
+        margin-top: -20px;
+        max-width: 300px;
+        height: 150px;
+
+        &::after {
+          bottom: 29px;
+          width: 400px;
+          left: -45px;
+        }
+      }
+    }
+  }
+}

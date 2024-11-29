@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Container padrão */
 .container {
   max-width: 1188px;
@@ -35,7 +39,7 @@ header {
 }
 
 /* Nenu de Navegação */
-& #menu {
+#menu {
   max-width: 1188px;
   width: 100%;
   padding: 20px 30px;
@@ -64,9 +68,32 @@ header {
       font-weight: 500;
     }
   }
+
+  & .hamburger {
+    display: none;
+  }
+
+  /* Estilos do menu mobile */
+  & .menu-mobile {
+    max-width: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #007fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: max-width 0.3s ease, opacity 0.3s ease;
+  }
 }
 
-/* Sessão Hero (Minha viagem) */
+/* Sessão Hero */
 #hero {
   display: flex;
   justify-content: center;
@@ -121,7 +148,7 @@ header {
       }
     }
 
-    & img {
+    & .airplanner-desktop {
       position: absolute;
       width: 240px;
       bottom: 80px;
@@ -144,6 +171,7 @@ header {
       margin-bottom: 50px;
       font-size: 40px;
       color: #d4dcff;
+      text-shadow: 0.1em 0.1em 0 hsl(200 50% 30%);
     }
 
     & .destination {
@@ -160,9 +188,9 @@ header {
         & img {
           width: 100%;
           border-radius: 10px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-            rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-            rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+            rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+            rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
         }
       }
 
@@ -180,15 +208,174 @@ header {
 
         & .destination-btn {
           all: unset;
-          padding: 4px 8px;
+          padding: 8px 8px;
           background-color: #007fff;
           color: #d4dcff;
           font-size: 18px;
           font-weight: 700;
           border-radius: 8px;
           cursor: pointer;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
       }
     }
   }
 }
+
+/* Sessão Quem Somos */
+#meet-us {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: linear-gradient(to bottom, #d4dcff, #d4dcff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & #about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & #about-us-title {
+      font-size: 40px;
+      font-weight: 800;
+      color: #007fff;
+      letter-spacing: 1.5px;
+      text-shadow: 0.1em 0.1em 0 hsl(0, 3%, 72%);
+    }
+
+    & .about-us-img {
+      width: 700px;
+      height: 250px;
+      position: relative;
+      margin-top: -50px;
+      z-index: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 48px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #007fff;
+        z-index: -1;
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    & .about-us-desc {
+      font-size: 18px;
+      text-align: center;
+      color: #007fff;
+      font-weight: 600;
+    }
+  }
+}
+
+#advice {
+  background: linear-gradient(to bottom, #d4dcff, #d4dcff);
+  padding-bottom: 150px;
+  & h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #007fff;
+    text-shadow: 0.1em 0.1em 0 hsl(0, 3%, 72%);
+    letter-spacing: 1.5px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #1affd5;
+      margin: -5px auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  & .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+    & .card {
+      background-color: #7d83ff;
+      color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3 ease, box-shadow 0.3 ease;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      & h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      & ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & li {
+          font-size: 0.9rem;
+          margin: 5px 0;
+          background: #1affd5;
+          padding: 8px;
+          border-radius: 8px;
+          color: #007fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #007fff;
+  padding: 5px;
+  & #footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d4dcff;
+    font-weight: 700;
+
+    a {
+      color: #d4dcff;
+      text-decoration: underline;
+    }
+  }
+}
+/* 
+Palheta de cores utilizada no design
+#D4DCFF - Periwinkle
+#7D83FF - Tropical Indigo
+#007FFF - Azure
+#1AFFD5 - Aquamarino
+*/
