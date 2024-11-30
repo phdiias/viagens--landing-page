@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+  /* Responsividade da classe container principal */
+  .container {
+    padding-inline: 15px;
+  }
+
   /* Deixando responsivo a navegação com menu hamburguer */
   #menu {
     & #icon-menu {
@@ -16,7 +21,7 @@
       z-index: 5;
     }
 
-    /* Aplicando uma classe .active para o Javascript */
+    /* Criando uma classe .active para o Javascript */
     .menu-mobile.active {
       max-width: 100%;
       opacity: 1;
@@ -60,19 +65,23 @@
     }
   }
 
-  /* Tamanho da imagem da sessão Quem somos? */
+  /* Responsividade sessão Minha Viagem */
+  #trip-me {
+    & #destinations {
+      gap: 50px;
+      & .destination {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  /* Sessão Quem Somos */
   #meet-us {
     & #about-us {
       & .about-us-img {
-        margin-top: -20px;
-        max-width: 300px;
-        height: 150px;
-
-        &::after {
-          bottom: 29px;
-          width: 400px;
-          left: -45px;
-        }
+        height: 180px;
       }
     }
   }
