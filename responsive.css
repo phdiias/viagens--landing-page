@@ -65,23 +65,25 @@
     }
   }
 
+  /* Responsividade sessão Quem Somos? */
+  #meet-us {
+    & #about-us {
+      flex-direction: column;
+
+      & .about-us-img {
+        & img {
+          width: 90%;
+        }
+      }
+    }
+  }
+
   /* Responsividade sessão Minha Viagem */
   #trip-me {
     & #destinations {
       gap: 50px;
       & .destination {
         flex-direction: column;
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  /* Sessão Quem Somos */
-  #meet-us {
-    & #about-us {
-      & .about-us-img {
-        height: 180px;
       }
     }
   }

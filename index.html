@@ -1,125 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link href="hamburgers.css" rel="stylesheet" />
 
-    <title>NextStep</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link href="hamburgers.css" rel="stylesheet" />
 
-  <body>
-    <header>
-      <nav id="menu">
-        <span id="icon-menu">NextStep</span>
-        <ul class="menu-nav">
-          <li class="menu-item"><a href="#trip-me">Minha Viagem</a></li>
-          <li class="menu-item"><a href="#meet-us">Nos Encontre</a></li>
-          <li class="menu-item"><a href="#advice">Conselhos</a></li>
-        </ul>
-        <!-- Menu Hamburger -->
-        <button class="hamburger hamburger--spring" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-        <!-- Menu Mobile  -->
-        <ul class="menu-mobile">
-          <li class="menu-item"><a href="#trip-me">Minha Viagem</a></li>
-          <li class="menu-item"><a href="#meet-us">Nos Encontre</a></li>
-          <li class="menu-item"><a href="#advice">Conselhos</a></li>
-        </ul>
-      </nav>
+  <title>NextStep</title>
+</head>
 
-      <section id="hero" class="container">
-        <div class="hero-desc">
-          <img
-            src="./images/airplaner-banner.svg"
-            alt="Desenho geométrico de um avião branco"
-            class="airplanner-mobile"
-          />
-          <h1>Descubra Destinos <span>Encantadores</span>!</h1>
-          <img
-            src="./images/airplaner-banner.svg"
-            alt="Desenho geométrico de um avião branco"
-            class="airplanner-desktop"
-          />
-          <h2>Planeja sua próxima aventura com facilidade.</h2>
-          <button>Explorar Agora</button>
-        </div>
-      </section>
-    </header>
-    <main>
-      <section id="trip-me">
-        <div id="destinations" class="container">
-          <h2 id="destinations-title">Escolha seu destino agora</h2>
-          <div class="destination">
-            <!-- Lone Pine, United States -->
-            <div class="destination-img">
-              <img
-                src="./images/banner-lone-pine.webp"
-                alt="Acampamento Noturno No Deserto Montanhoso Sob O Céu Estrelado"
-              />
-            </div>
-            <div class="destination-desc">
-              <p class="destination-paragraph">
-                Lone Pine é o destino perfeito para quem busca uma experiência
-                única de acampamento noturno. Cercado por paisagens montanhosas
-                deslumbrantes e o vasto deserto, o local oferece um céu
-                estrelado inigualável, ideal para quem ama tranquilidade e
-                contato direto com a natureza.
-              </p>
-              <a href="#" class="destination-btn">Descubra esse destino</a>
-            </div>
+<body>
+  <header>
+    <nav id="menu">
+      <span id="icon-menu">NextStep</span>
+      <ul class="menu-nav">
+        <li class="menu-item"><a href="#trip-me">Minha Viagem</a></li>
+        <li class="menu-item"><a href="#meet-us">Nos Encontre</a></li>
+        <li class="menu-item"><a href="#advice">Conselhos</a></li>
+      </ul>
+      <!-- Menu Hamburger -->
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <!-- Menu Mobile  -->
+      <ul class="menu-mobile">
+        <li class="menu-item"><a class="item-a" href="#trip-me">Minha Viagem</a></li>
+        <li class="menu-item"><a class="item-a" href="#meet-us">Nos Encontre</a></li>
+        <li class="menu-item"><a class="item-a" href="#advice">Conselhos</a></li>
+      </ul>
+    </nav>
+
+    <section id="hero" class="container">
+      <div class="hero-desc">
+        <img src="./images/airplaner-banner.svg" alt="Desenho geométrico de um avião branco"
+          class="airplanner-mobile" />
+        <h1>Descubra Destinos <span>Encantadores</span>!</h1>
+        <img src="./images/airplaner-banner.svg" alt="Desenho geométrico de um avião branco"
+          class="airplanner-desktop" />
+        <h2>Planeja sua próxima aventura com facilidade.</h2>
+        <a class="explore-now .item-a" href="#trip-me">Explorar Agora</a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="trip-me">
+      <div id="destinations" class="container">
+        <h2 id="destinations-title">Escolha seu destino agora</h2>
+        <div class="destination">
+          <!-- Lone Pine, United States -->
+          <div class="destination-img">
+            <img src="./images/banner-lone-pine.webp"
+              alt="Acampamento Noturno No Deserto Montanhoso Sob O Céu Estrelado" />
           </div>
-          <div class="destination">
-            <!-- Chania Grienchenland -->
-            <div class="destination-img">
-              <img
-                src="./images/banner-chania-grienchenland.webp"
-                alt="Horizonte Da Cidade No Mar Azul Sob O Céu Azul"
-              />
-            </div>
-            <div class="destination-desc">
-              <p class="destination-paragraph">
-                Chania, na Grécia, é um destino encantador onde o horizonte da
-                cidade se encontra com o mar azul vibrante, sob um céu claro e
-                ensolarado. Com sua mistura de arquitetura antiga e paisagens
-                naturais deslumbrantes, oferece uma experiência única de
-                relaxamento e exploração.
-              </p>
-              <a href="#" class="destination-btn">Descubra esse destino</a>
-            </div>
-          </div>
-          <div class="destination">
-            <!-- Barra de Camaratuba -->
-            <div class="destination-img">
-              <img
-                src="./images/banner-barra-de-camaratuba.webp"
-                alt="Corpo de água"
-              />
-            </div>
-            <div class="destination-desc">
-              <p class="destination-paragraph">
-                Barra de Camaratuba, na Paraíba, é um refúgio natural onde o
-                corpo de água tranquilo encontra a beleza selvagem do litoral.
-                Com suas águas calmas e paisagens paradisíacas, o local é
-                perfeito para quem busca sossego e conexão com a natureza em um
-                ambiente acolhedor e remoto.
-              </p>
-              <a href="#" class="destination-btn">Descubra esse destino</a>
-            </div>
+          <div class="destination-desc">
+            <p class="destination-paragraph">
+              Lone Pine é o destino perfeito para quem busca uma experiência
+              única de acampamento noturno. Cercado por paisagens montanhosas
+              deslumbrantes e o vasto deserto, o local oferece um céu
+              estrelado inigualável, ideal para quem ama tranquilidade e
+              contato direto com a natureza.
+            </p>
+            <a href="#" class="destination-btn">Descubra esse destino</a>
           </div>
         </div>
-      </section>
-      <section id="meet-us">
-        <div id="about-us" class="container">
+        <div class="destination">
+          <!-- Chania Grienchenland -->
+          <div class="destination-img">
+            <img src="./images/banner-chania-grienchenland.webp" alt="Horizonte Da Cidade No Mar Azul Sob O Céu Azul" />
+          </div>
+          <div class="destination-desc">
+            <p class="destination-paragraph">
+              Chania, na Grécia, é um destino encantador onde o horizonte da
+              cidade se encontra com o mar azul vibrante, sob um céu claro e
+              ensolarado. Com sua mistura de arquitetura antiga e paisagens
+              naturais deslumbrantes, oferece uma experiência única de
+              relaxamento e exploração.
+            </p>
+            <a href="#" class="destination-btn">Descubra esse destino</a>
+          </div>
+        </div>
+        <div class="destination">
+          <!-- Barra de Camaratuba -->
+          <div class="destination-img">
+            <img src="./images/banner-barra-de-camaratuba.webp" alt="Corpo de água" />
+          </div>
+          <div class="destination-desc">
+            <p class="destination-paragraph">
+              Barra de Camaratuba, na Paraíba, é um refúgio natural onde o
+              corpo de água tranquilo encontra a beleza selvagem do litoral.
+              Com suas águas calmas e paisagens paradisíacas, o local é
+              perfeito para quem busca sossego e conexão com a natureza em um
+              ambiente acolhedor e remoto.
+            </p>
+            <a href="#" class="destination-btn">Descubra esse destino</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="meet-us">
+      <div id="about-us" class="container">
+        <div class="about-us-texts">
           <h2 id="about-us-title">QUEM SOMOS?</h2>
-          <div class="about-us-img">
-            <img src="./images/team.svg" alt="Desenho simulando nossa equipe" />
-          </div>
           <p class="about-us-desc">
             Somos apaixonados por viagens e dedicados a ajudá-lo a encontrar o
             roteiro perfeito. Nossa equipe trabalha para oferecer experiências
@@ -127,50 +112,53 @@
             companhia, nós temos algo especial para você!
           </p>
         </div>
-      </section>
-      <section id="advice">
-        <h2 class="container">CONSELHOS</h2>
-        <div class="card-container container">
-          <div class="card">
-            <h3>Lone Pine</h3>
-            <p>Explore o equilibrio entre aventura e tranquilidade.</p>
-            <ul>
-              <li>Descubra as trilhas escondidas.</li>
-              <li>Prove o café local.</li>
-              <li>Melhor época: outono.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Chania</h3>
-            <p>Charme histórico e praias cristlainas esperam por você.</p>
-            <ul>
-              <li>Caminhe pela Cidade Velha.</li>
-              <li>Experimente azeites locais.</li>
-              <li>Não perca a praia de Elafonisi.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Camaratuba</h3>
-            <p>Natureza intocada e cultura acolhedora.</p>
-            <ul>
-              <li>Passeio de jangada no rio.</li>
-              <li>Curta o pôr do sol nas dunas.</li>
-              <li>Experimente prats típicos.</li>
-            </ul>
-          </div>
+        <div class="about-us-img">
+          <img src="./images/team.svg" alt="Desenho simulando nossa equipe" />
         </div>
-      </section>
-    </main>
-    <footer>
-      <div id="footer" class="container">
-        <p>
-          Site criado por:
-          <a href="https://github.com/phdiias" target="_blank"
-            >Pedro Henrique</a
-          >
-        </p>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+    </section>
+    <section id="advice">
+      <h2 class="container">CONSELHOS</h2>
+      <div class="card-container container">
+        <div class="card">
+          <h3>Lone Pine</h3>
+          <p>Explore o equilibrio entre aventura e tranquilidade.</p>
+          <ul>
+            <li>Descubra as trilhas escondidas.</li>
+            <li>Prove o café local.</li>
+            <li>Melhor época: outono.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Chania</h3>
+          <p>Charme histórico e praias cristlainas esperam por você.</p>
+          <ul>
+            <li>Caminhe pela Cidade Velha.</li>
+            <li>Experimente azeites locais.</li>
+            <li>Não perca a praia de Elafonisi.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Camaratuba</h3>
+          <p>Natureza intocada e cultura acolhedora.</p>
+          <ul>
+            <li>Passeio de jangada no rio.</li>
+            <li>Curta o pôr do sol nas dunas.</li>
+            <li>Experimente pratos típicos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="footer" class="container">
+      <p>
+        Site criado por:
+        <a href="https://github.com/phdiias" target="_blank">Pedro Henrique</a>
+      </p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>

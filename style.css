@@ -145,7 +145,7 @@ header {
       color: #d4dcff;
     }
 
-    & button {
+    & .explore-now {
       display: inline-block;
       all: unset;
       cursor: pointer;
@@ -160,7 +160,8 @@ header {
       z-index: 1;
       transition: 400ms;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: transparent;
         color: #d4dcff;
       }
@@ -181,8 +182,10 @@ header {
 
 /* Sessão Minha Viagem  */
 #trip-me {
-  background: linear-gradient(to bottom, #007fff, #d4dcff);
-
+  background-color: #d4dcff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  
   & #destinations {
     display: flex;
     flex-direction: column;
@@ -193,8 +196,7 @@ header {
       text-align: center;
       margin-bottom: 50px;
       font-size: 40px;
-      color: #d4dcff;
-      text-shadow: 0.1em 0.1em 0 hsl(200 50% 30%);
+      color: #007fff;
     }
 
     & .destination {
@@ -228,7 +230,7 @@ header {
         align-items: center;
         gap: 30px;
         & .destination-paragraph {
-          color: #000;
+          color: #007fff;
           font-weight: 600;
           font-size: 18px;
           text-align: justify;
@@ -259,58 +261,58 @@ header {
 
 /* Sessão Quem Somos */
 #meet-us {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background: linear-gradient(to bottom, #d4dcff, #d4dcff);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #007fff;
   display: flex;
   justify-content: center;
   align-items: center;
 
   & #about-us {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 50px;
 
-    & #about-us-title {
-      font-size: 40px;
-      font-weight: 800;
-      color: #007fff;
-      letter-spacing: 1.5px;
-      text-shadow: 0.1em 0.1em 0 hsl(0, 3%, 72%);
+    & .about-us-texts {
+      flex: 1;
+      & #about-us-title {
+        font-size: 40px;
+        font-weight: 800;
+        color: #d4dcff;
+        letter-spacing: 1.5px;
+      }
+
+      & .about-us-desc {
+        font-size: 18px;
+        color: #d4dcff;
+        font-weight: 500;
+      }
     }
 
     & .about-us-img {
-      max-width: 700px;
-      height: 250px;
-      width: 100%;
       position: relative;
       z-index: 1;
+      flex: 1;
 
       & img {
         width: 100%;
         height: 100%;
       }
     }
-
-    & .about-us-desc {
-      font-size: 18px;
-      text-align: center;
-      color: #007fff;
-      font-weight: 600;
-    }
   }
 }
 
 #advice {
-  background: linear-gradient(to bottom, #d4dcff, #d4dcff);
-  padding-bottom: 150px;
+  background-color: #d4dcff;
+  padding-top: 50px;
+  padding-bottom: 50px;
   & h2 {
     text-align: center;
     font-size: 40px;
     font-weight: 800;
     color: #007fff;
-    text-shadow: 0.1em 0.1em 0 hsl(0, 3%, 72%);
     letter-spacing: 1.5px;
     position: relative;
   }
@@ -323,7 +325,7 @@ header {
     padding: 20px;
 
     & .card {
-      background-color: #7d83ff;
+      background-color: #007fff;
       color: #ffffff;
       border-radius: 15px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -345,6 +347,7 @@ header {
       & p {
         font-size: 1rem;
         margin-bottom: 15px;
+        font-weight: 600;
       }
 
       & ul {
@@ -355,11 +358,16 @@ header {
         & li {
           font-size: 0.9rem;
           margin: 5px 0;
-          background: #1affd5;
+          background: #d4dcff;
           padding: 8px;
           border-radius: 8px;
           color: #007fff;
           font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.05);
+          }
         }
       }
     }

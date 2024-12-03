@@ -1,7 +1,8 @@
 // Menu Hamburger
 const iconHamburger = document.querySelector('.hamburger');
 const menuMobile = document.querySelector('.menu-mobile');
-const menuLinks = document.querySelectorAll('.menu-item a[href^="#"]');
+const menuLinks = document.querySelectorAll('.item-a[href^="#"]');
+const btnExplore = document.querySelector('.explore-now');
 
 // Função abre e fecha menu mobile no ícone do menu hamburger
 function toggleMobileMenu() {
@@ -47,3 +48,7 @@ menuLinks.forEach((link) => {
     scrollToSection(event);
   });
 });
+
+btnExplore.addEventListener('click', (event) => {
+  scrollToSection(event)
+})
