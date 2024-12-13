@@ -25,4 +25,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 A **NextStep** é um projeto da plataforma [DEVStart](https://app.devstart.tech), onde precisei criar uma Landing Page de viagens. O projeto não tem um design no figma, então utilizei o ChatGPT para me ajudar com as idéias de design e frases. Com ajuda de outro site, eu usei a palheta de cores geradas.
 
-- [Acesse o projeto online](https://phdiias.github.io/meow-coffee/)
+- [Acesse o projeto online](https://phdiias.github.io/viagens--landing-page/)
